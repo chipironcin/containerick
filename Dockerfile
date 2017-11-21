@@ -1,5 +1,5 @@
 FROM alpine
-MAINTAINER Jorge Marin
+LABEL maintainer="Jorge Marin"
 
 COPY ricksFace.txt ricksFace.txt
 COPY text.txt text.txt
