@@ -1,10 +1,10 @@
 FROM alpine
 LABEL maintainer="Jorge Marin"
 
-COPY ricksFace.txt ricksFace.txt
-COPY text.txt text.txt
+COPY assets /
+COPY entrypoint.sh entrypoint.sh
 COPY centerGraphic.sh centerGraphic.sh
-COPY entrypoint entrypoint
 
 ENV TERM xterm
-ENTRYPOINT /entrypoint
+
+ENTRYPOINT /entrypoint.sh
